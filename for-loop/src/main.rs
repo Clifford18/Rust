@@ -1,7 +1,7 @@
 fn main() {
     let animals = vec!["rabbit", "Dog","cat"];
-    for  a in animals.iter(){
-        println!("the animal name is {}",a);
+    for  (index, a) in animals.iter().enumerate(){
+        println!("the index is {} animal name is {}",index, a);
     }
 
     let numbers =30..51;
